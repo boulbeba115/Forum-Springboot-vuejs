@@ -1,0 +1,144 @@
+
+.login-container{
+    width: 100%;
+    height: 540px;
+}
+.login-form {
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    min-width: 350px;
+    background: #efecec;
+    min-height: 370px;
+    border-radius: 16px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 36px;
+    color: gray;
+    position: relative;
+    top: 17px;
+    font-family: "Rubik";
+    font-weight: 400;
+}
+
+.form-Inputs {
+    margin: 17px 0;
+    height: 40px;
+    width: 300px;
+    border: none;
+    outline: none;
+    padding-left: 33px;
+    border-radius: 10px;
+}
+
+.login-icon {
+    width: 60px;
+    height: 60px;
+    background: #26b271;
+    border-radius: 100%;
+    padding: 18px 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.login-icon:hover {
+    background: #11c26f;
+    color: white;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+
+.user-ico {
+    position: relative;
+    left: 25px;
+    top: 0px;
+}
+
+.pass-ico {
+    position: absolute;
+    font-size: 17px;
+    left: 25px;
+    top: 27.5px;
+}
+
+.logo-SignIn {
+    width: 39%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, +103%);
+    top: -50%;
+}
+
+img.logo-signUp {
+    width: 23%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0px;
+}
+
+.stayConn {
+    text-align: left;
+    margin-left: 21px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+.sign-Up {
+    position: absolute;
+    right: 28px;
+    /* top: -25px; */
+    background: #d7a572;
+    /* width: 78px; */
+    height: 63px;
+    z-index: 1000000;
+    color: white;
+    padding: 21px 10px;
+    font-weight: 800;
+    border-bottom: #dd7a4a 4px solid;
+    text-decoration: none;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.sign-Up:hover {
+    color: white;
+    cursor: pointer;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+    display: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    color: red;
+    opacity: 1;
+    position: absolute !important;
+    left: 0 !important;
+}
+
+.errorField {
+    border: solid red 1px;
+}
+
+.errorMsg {
+    color: red;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+.control-form {
+    text-align: left;
+}

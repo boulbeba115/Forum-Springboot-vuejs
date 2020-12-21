@@ -1,0 +1,824 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #f7f7f7;
+  color: #777;
+  font-family: "Myriad Web Pro", Helvetica, Sans-Serif;
+  font-size: .875em;
+}
+
+/* CONTAINERS */
+main{
+  margin: auto;
+  max-width: 380px;
+}
+section{
+  background: #fff;
+  border-radius: .25em;
+  box-shadow: 0 .15em .175em hsla(0,0%,0%,.1);
+  margin: 1.5em;
+  overflow: hidden;
+}
+figure{
+  height: 12.5em;
+}
+article{
+  /*padding: 2em;*/
+}
+
+/* IMAGE */
+.topic-img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+@supports (display: grid){
+  @media only screen and (min-width: 768px){
+    main{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-gap: 1.5em;
+      max-width: 1140px;
+      padding: 1.5em;
+    }
+
+    section{
+      margin: 0;
+    }
+  }
+}
+
+/**/
+@font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:300;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+  unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:300;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+  unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:300;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+  unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:300;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+  unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:300;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+  unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+  unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+  unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+  unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:500;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nMrXyi0A.woff2) format('woff2');
+  unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:500;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nFrXyi0A.woff2) format('woff2');
+  unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:500;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nDrXyi0A.woff2) format('woff2');
+  unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:500;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nPrXyi0A.woff2) format('woff2');
+  unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } 
+  @font-face { 
+  font-family:'Rubik';
+  font-style:normal;
+  font-weight:500;
+  src:url(https://fonts.gstatic.com/s/rubik/v11/iJWKBXyIfDnIV7nBrXw.woff2) format('woff2');
+  unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+  .forabg, .forumbg { 
+      margin-bottom: 30px; 
+      clear: both;
+  } 
+  
+  .forabg, .forumbg, .viewtopic_wrapper { 
+      background-color: rgba(0,0,0,.025);
+  } 
+  
+  .forabg, .forumbg { 
+      border-radius: 0 0 10px 10px; 
+      border-top-left-radius: 0px; 
+      border-top-right-radius: 0px; 
+      border-bottom-right-radius: 10px; 
+      border-bottom-left-radius: 10px;
+  } 
+  
+  .forumlist_grid .forabg { 
+      margin-bottom: 45px;
+  } 
+  
+  .forumlist_grid .forabg { 
+      border-radius: 10px; 
+      border-top-left-radius: 10px; 
+      border-top-right-radius: 10px; 
+      border-bottom-right-radius: 10px; 
+      border-bottom-left-radius: 10px;
+  } 
+  
+  .innertube { 
+      margin: 0; 
+      margin-top: 0; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px;
+  } 
+  
+  #contentcolumn { 
+      margin: 0 300px 0 120px; 
+      padding: 0 30px; 
+      margin-top: 0px; 
+      margin-right: 300px; 
+      margin-bottom: 0px; 
+      margin-left: 120px; 
+      padding-top: 0px; 
+      padding-right: 30px; 
+      padding-bottom: 0px; 
+      padding-left: 30px;
+  } 
+  
+  .sidebar-right-only #contentcolumn { 
+      margin-left: 0px; 
+      padding-left: 0;
+  } 
+  
+  #contentwrapper { 
+      float: left; 
+      width: 100%;
+  } 
+  
+  .page-body { 
+      margin: 0; 
+      clear: both; 
+      margin-top: 0px; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px;
+  } 
+  
+  #inner-wrap { 
+      padding: 30px; 
+      box-sizing: border-box; 
+      box-shadow: 0 0 5px rgba(0,0,0,0.05); 
+      padding-top: 30px; 
+      padding-right: 30px; 
+      padding-bottom: 30px; 
+      padding-left: 30px;
+  } 
+  
+  #inner-wrap { 
+      background: #FFFFFF; 
+      position: relative; 
+      margin-top: -50px !important; 
+      z-index: 3; 
+      background-image: initial; 
+      background-position-x: initial; 
+      background-position-y: initial; 
+      background-size: initial; 
+      background-repeat-x: initial; 
+      background-repeat-y: initial; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: rgb(255, 255, 255);
+  } 
+  
+  #inner-wrap { 
+      border-radius: 10px; 
+      border-top-left-radius: 10px; 
+      border-top-right-radius: 10px; 
+      border-bottom-right-radius: 10px; 
+      border-bottom-left-radius: 10px;
+  } 
+  
+  .body-layout-Fluid #inner-wrap { 
+      width: 95%; 
+      margin: 0 auto; 
+      margin-top: 0px; 
+      margin-right: auto; 
+      margin-bottom: 0px; 
+      margin-left: auto;
+  } 
+  
+  .wrap { 
+      border-radius: 8px; 
+      margin: 0 auto; 
+      padding: 0; 
+      width: 100%; 
+      border-top-left-radius: 8px; 
+      border-top-right-radius: 8px; 
+      border-bottom-right-radius: 8px; 
+      border-bottom-left-radius: 8px; 
+      margin-top: 0px; 
+      margin-right: auto; 
+      margin-bottom: 0px; 
+      margin-left: auto; 
+      padding-top: 0px; 
+      padding-right: 0px; 
+      padding-bottom: 0px; 
+      padding-left: 0px;
+  } 
+  
+  .wrap { 
+  
+  } 
+  
+  .body-layout-Fluid .wrap { 
+  
+  } 
+  
+  body { 
+      font-family: "Rubik", Arial, Helvetica, sans-serif; 
+      font-size: 14px;
+  } 
+  
+  body { 
+      border-top: 0px solid; 
+      border-top-width: 0px; 
+      border-top-style: solid; 
+      border-top-color: initial;
+  } 
+  
+  body { 
+      margin: 0; 
+      margin-top: 0px; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px;
+  } 
+  
+  body { 
+      color: #333333; 
+      background-color: #ffffff;
+  } 
+  
+  body { 
+      line-height: normal; 
+      margin: 0; 
+      padding: 0; 
+      word-wrap: break-word; 
+      -webkit-print-color-adjust: exact; 
+      margin-top: 0px; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px; 
+      padding-top: 0px; 
+      padding-right: 0px; 
+      padding-bottom: 0px; 
+      padding-left: 0px; 
+      overflow-wrap: break-word;
+  } 
+  
+  html, body { 
+      height: 100%;
+  } 
+  
+  @media (min-width: 1200px){     
+  body { 
+      border-top-color: #F3F;
+  } 
+  }     
+  
+  html, body { 
+      color: rgba(0,0,0,.4); 
+      background-color: #ECF0F1;
+  } 
+  
+  body { 
+      background-color: transparent;
+  } 
+  
+  body { 
+  
+  } 
+  
+  html { 
+      font-family: sans-serif; 
+      -ms-text-size-adjust: 100%; 
+      -webkit-text-size-adjust: 100%; 
+      text-size-adjust: 100%;
+  } 
+  
+  html { 
+      font-size: 1em; 
+      line-height: 1.5; 
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  } 
+  
+  html { 
+      height: 101%;
+  } 
+  
+  html { 
+      font-size: 100%;
+  } 
+  
+  .inner:after, ul.linklist:after, .action-bar:after, .notification_text:after, .tabs-container:after, ul:after , ul:after , .avatar-container:after  { 
+      clear: both; 
+      content: ''; 
+      display: block;
+  } 
+  
+  ol, ul { 
+      list-style: none; 
+      margin: 0; 
+      padding: 0; 
+      list-style-position: initial; 
+      list-style-image: initial; 
+      list-style-type: none; 
+      margin-top: 0px; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px; 
+      padding-top: 0px; 
+      padding-right: 0px; 
+      padding-bottom: 0px; 
+      padding-left: 0px;
+  } 
+  
+  ul { 
+      list-style-type: disc;
+  } 
+  
+  ul.forums, ul.topics { 
+      padding: 10px; 
+      padding-top: 10px; 
+      padding-right: 10px; 
+      padding-bottom: 10px; 
+      padding-left: 10px;
+  } 
+  
+  ul.topiclist { 
+      display: block; 
+      list-style-type: none; 
+      margin: 0; 
+      margin-top: 0px; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px;
+  } 
+  
+  ul.forums { 
+  
+  } 
+  
+  ul.forums  { 
+      margin: 10px 0; 
+      margin-top: 10px; 
+      margin-right: 0px; 
+      margin-bottom: 10px; 
+      margin-left: 0px;
+  } 
+  
+  li { 
+      display: list-item;
+  } 
+  
+  li.row { 
+      border-bottom: 1px solid transparent; 
+      padding: 12px; 
+      margin-bottom: 0px !important; 
+      border-bottom-width: 1px; 
+      border-bottom-style: solid; 
+      border-bottom-color: transparent; 
+      padding-top: 12px; 
+      padding-right: 12px; 
+      padding-bottom: 12px; 
+      padding-left: 12px;
+  } 
+  
+  li.row { 
+      border-bottom-color: #ECF0F1; 
+      background-color: #FFFFFF;
+  } 
+  
+  ul.topiclist li  { 
+      display: block; 
+      list-style-type: none; 
+      margin: 0; 
+      margin-top: 0px; 
+      margin-right: 0px; 
+      margin-bottom: 0px; 
+      margin-left: 0px;
+  } 
+  
+  ul.topiclist li  { 
+  
+  } 
+  
+  li.row  { 
+      margin-bottom: 0px !important;
+  } 
+  
+  li.row  { 
+      float: left; 
+      display: block; 
+      width: 33.3333333%; 
+      border: none; 
+      padding: 0; 
+      border-top-width: initial; 
+      border-right-width: initial; 
+      border-bottom-width: initial; 
+      border-left-width: initial; 
+      border-top-style: none; 
+      border-right-style: none; 
+      border-bottom-style: none; 
+      border-left-style: none; 
+      border-top-color: initial; 
+      border-right-color: initial; 
+      border-bottom-color: initial; 
+      border-left-color: initial; 
+      border-image-source: initial; 
+      border-image-slice: initial; 
+      border-image-width: initial; 
+      border-image-outset: initial; 
+      border-image-repeat: initial; 
+      padding-top: 0px; 
+      padding-right: 0px; 
+      padding-bottom: 0px; 
+      padding-left: 0px;
+  } 
+  
+  li.row:first-child { 
+      border-radius: 10px 10px 0 0; 
+      border-top-left-radius: 10px; 
+      border-top-right-radius: 10px; 
+      border-bottom-right-radius: 0px; 
+      border-bottom-left-radius: 0px;
+  } 
+  
+  li.row , .grid_image_container, .forumlist_grid_forum_image, .grid_colour_overlay, .grid_tile_full_bg_img { 
+      border-radius: 15px; 
+      border-top-left-radius: 15px; 
+      border-top-right-radius: 15px; 
+      border-bottom-right-radius: 15px; 
+      border-bottom-left-radius: 15px;
+  } 
+  
+  ul.forums li.row  { 
+      background: none; 
+      background-image: none; 
+      background-position-x: initial; 
+      background-position-y: initial; 
+      background-size: initial; 
+      background-repeat-x: initial; 
+      background-repeat-y: initial; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: initial;
+  } 
+  
+  .clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after { 
+      content: " "; 
+      display: table;
+  } 
+  
+  .clearfix:after, .container:after, .container-fluid:after, .row:after { 
+      clear: both;
+  } 
+  
+  li.row:last-child { 
+      border-radius: 0 0 10px 10px; 
+      border-top-left-radius: 0px; 
+      border-top-right-radius: 0px; 
+      border-bottom-right-radius: 10px; 
+      border-bottom-left-radius: 10px;
+  } 
+  
+  .grid_image_container  { 
+      margin-bottom: 10px; 
+      margin-right: 5px; 
+      margin-left: 5px; 
+      position: relative; 
+      border: 1px solid rgba(0,0,0,.05); 
+      transition: transform .1s; 
+      border-top-width: 1px; 
+      border-right-width: 1px; 
+      border-bottom-width: 1px; 
+      border-left-width: 1px; 
+      border-top-style: solid; 
+      border-right-style: solid; 
+      border-bottom-style: solid; 
+      border-left-style: solid; 
+      border-top-color: rgba(0, 0, 0, 0.05); 
+      border-right-color: rgba(0, 0, 0, 0.05); 
+      border-bottom-color: rgba(0, 0, 0, 0.05); 
+      border-left-color: rgba(0, 0, 0, 0.05); 
+      border-image-source: initial; 
+      border-image-slice: initial; 
+      border-image-width: initial; 
+      border-image-outset: initial; 
+      border-image-repeat: initial; 
+      transition-duration: 0.1s; 
+      transition-timing-function: ease; 
+      transition-delay: 0s; 
+      transition-property: transform;
+  } 
+  
+  .grid_image_container  { 
+      background: #FFFFFF; 
+      background-image: initial; 
+      background-position-x: initial; 
+      background-position-y: initial; 
+      background-size: initial; 
+      background-repeat-x: initial; 
+      background-repeat-y: initial; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: rgb(255, 255, 255);
+  } 
+  
+  .grid_image_container:last-child  { 
+  
+  } 
+  
+  a { 
+      background-color: transparent;
+  } 
+  
+  a { 
+      color: #428bca; 
+      text-decoration: none; 
+      text-decoration-line: none; 
+      text-decoration-style: initial; 
+      text-decoration-color: initial;
+  } 
+  
+  a { 
+      direction: ltr; 
+      unicode-bidi: embed; 
+      text-decoration: none; 
+      display: inline-block; 
+      text-decoration-line: none; 
+      text-decoration-style: initial; 
+      text-decoration-color: initial;
+  } 
+  
+  a { 
+      color: #676767;
+  } 
+  
+  .tile_inner { 
+      position: relative; 
+      z-index: 1;
+  } 
+  
+  .tile_inner  { 
+      width: 100%; 
+      padding: 30px; 
+      box-sizing: border-box; 
+      min-height: 200px; 
+      padding-top: 30px; 
+      padding-right: 30px; 
+      padding-bottom: 30px; 
+      padding-left: 30px;
+  } 
+  
+  .tile_row_1  { 
+      background-size: 64px; 
+      background-image: url('http://planetstyles.net/demo/milk/3.3/3/styles/Milk_v2/theme/images/comment.png'); 
+      background-position: left top; 
+      background-repeat: no-repeat; 
+      height: 100px; 
+      overflow: hidden; 
+      background-position-x: left; 
+      background-position-y: top; 
+      background-repeat-x: no-repeat; 
+      background-repeat-y: no-repeat; 
+      overflow-x: hidden; 
+      overflow-y: hidden;
+  } 
+  
+  .tile_row_1.tile_has_icon  { 
+      padding-left: 84px; 
+      min-height: 100px;
+  } 
+  
+  .tile_row_2  { 
+      margin-top: 15px;
+  } 
+  
+  .tile_row_2:before { 
+      content: ''; 
+      display: block; 
+      width: 60px; 
+      height: 2px; 
+      margin-bottom: 10px;
+  } 
+  
+  .tile_row_2:before { 
+      border-radius: 2px; 
+      border-top-left-radius: 2px; 
+      border-top-right-radius: 2px; 
+      border-bottom-right-radius: 2px; 
+      border-bottom-left-radius: 2px;
+  } 
+  
+  .headerbar, body.content_block_header_block li.header, li.header:before , .no_avatar, .social_links_footer, .forumbg-table, .sidebar_block_stripe:before, .fancy_panel:before, .tile_row_2:before, .tile_row_2:before { 
+      background: rgb(176,106,179); 
+      background: -moz-linear-gradient(left,  rgba(176,106,179,1) 0%, rgba(69,104,220,1) 100%); 
+      background: -webkit-linear-gradient(left,  rgba(176,106,179,1) 0%,rgba(69,104,220,1) 100%); 
+      background: linear-gradient(to right,  rgba(176,106,179,1) 0%,rgba(69,104,220,1) 100%); 
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b06ab3', endColorstr='#4568dc',GradientType=1 ); 
+      background-image: linear-gradient(to right, rgb(176, 106, 179) 0%, rgb(69, 104, 220) 100%); 
+      background-position-x: initial; 
+      background-position-y: initial; 
+      background-size: initial; 
+      background-repeat-x: initial; 
+      background-repeat-y: initial; 
+      background-attachment: initial; 
+      background-origin: initial; 
+      background-clip: initial; 
+      background-color: initial;
+  } 
+  
+  .tile_title { 
+      font-size: 1.3em;
+  } 
+  
+  .tile_title { 
+      font-weight: 600;
+  } 
+  
+  .tile_row_25 { 
+      width: 25%; 
+      float: left;
+  } 
+  
+  .tile_row_50 { 
+      width: 50%; 
+      float: left;
+  } 
+  
+  .mini_label, .mini_number, .forum_description  { 
+      color: rgba(0,0,0,.4);
+  } 
+  
+  .forum_description  { 
+      display: block; 
+      margin-top: 15px;
+  } 
+  
+  .forum_description  { 
+      font-weight: 300 !important;
+  } 
+  
+  span.forum_description  { 
+      font-size: 14px;
+  } 
+  
+  .mini_label, .mini_number { 
+      display: block;
+  } 
+  
+  .mini_number, .mini_date { 
+      padding-top: 10px;
+  } 
+  
+  .mini_number { 
+      font-size: 1.2em;
+  } 
+  
+  .mini_number { 
+      font-weight: 600;
+  } 
+  
+  .mini_label { 
+      font-weight: 400;
+  } 
+  
+  .mini_date { 
+      padding-top: 13px;
+  } 
+  
+  span.mini_date { 
+      display: block;
+  } 
+  
+  i, em { 
+      font-style: italic;
+  } 
+  
+  .fa { 
+      display: inline-block; 
+      font: normal normal normal 14px/1 FontAwesome; 
+      font-size: inherit; 
+      text-rendering: auto; 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale; 
+      font-style: normal; 
+      font-variant-caps: normal; 
+      font-variant-ligatures: normal; 
+      font-variant-numeric: normal; 
+      font-variant-east-asian: normal; 
+      font-weight: normal; 
+      font-stretch: normal; 
+      line-height: 1; 
+      font-family: FontAwesome;
+  } 
+  
+  .icon, .icon  { 
+      display: inline-block; 
+      font-weight: normal; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-family: FontAwesome; 
+      font-size: 14px; 
+      line-height: 1; 
+      text-rendering: auto; 
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale; 
+      font-variant-ligatures: normal; 
+      font-variant-caps: normal; 
+      font-variant-numeric: normal; 
+      font-variant-east-asian: normal;
+  } 
+  
+  .icon.icon-green, a:hover .icon.icon-green  { 
+      color: #1b9A1B;
+  } 
+  
+  .fa-check:before { 
+      content: "\f00c";
+  } 
+  
+  .icon:before { 
+      padding-right: 2px;
+  } 
+  
+  

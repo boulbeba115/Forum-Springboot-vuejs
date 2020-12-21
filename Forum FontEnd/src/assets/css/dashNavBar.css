@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.dashbord {
+  display: flex;
+  background:#f7f7f8 !important;
+}
+.MenutBar {
+  /*background: #2980b9 !important;*/
+  height: 9vh;
+  border-bottom:1px solid gray ;
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+.dashBar:not(.el-menu--collapse) {
+  max-width: 300px;
+  height: 101vh;
+  background: #2980b9;
+}
+.topNavBar {
+  width: 100%;
+  position: relative;
+  left: -1px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  min-height: 70px;
+  background-color: white ! important;
+}
+.logoImg {
+  width: 130px;
+  padding-top: 4%;
+  cursor: pointer;
+}
+.divider {
+  width: 80%;
+  background: white;
+  border-radius: 25px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+/*
+.iconStyle {
+  position: relative;
+  color: white;
+  left: -85px;
+  font-size: 27px;
+}*/
+
+.el-menu-item.is-active {
+  color: white !important;
+}
+.el-menu-item.is-active:active {
+  color: gray !important;
+}
+.el-submenu__title {
+  padding-left: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white !important;
+}
+
+.el-submenu__title i {
+  color: white !important;
+  padding-right: 10px;
+}
+
+.el-menu-item:focus,
+.el-menu-item:hover {
+  background-color: #3498db !important;
+}
+
+.el-menu.el-menu--inline {
+  background-color: #eeeef0;
+}
+
+.el-submenu__title:hover, .el-submenu__title:focus{
+  background-color: #456d99 !important;
+}
+
+.el-menu-item-group__title {
+  padding: 0 !important;
+}
+
+.iconSpan {
+  position: relative;
+  left: -20px;
+}
+.iconStyle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 3px 8px;
+  color: gray;
+  font-size: 22px;
+  cursor: pointer;
+  border: solid 3px gray;
+  padding: 6px 8.2px;
+  
+}
+.iconStyle:hover,
+.iconStyle:focus {
+  background-color: gray;
+  color: white;
+}
+.navbar-brand {
+  color: white;
+  text-align: center;
+  letter-spacing: 4px;
+  height: 67px;
+  width: 100%;
+  padding-top: 21px;
+  text-decoration: none;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: white;
+}
+.el-submenu__title {
+  font-size: 16px !important;
+  font-weight: 100 !important;
+  
+}
+.dashBar.el-menu--collapse.el-menu {
+  background: #2980b9;
+  height: 100vh;
+}
+.miniLogo {
+  width: 42px;
+  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  display: block;
+  margin-top: 6%;
+}
+.pageTitle {
+  text-transform: capitalize;
+  margin-top: 24px;
+  font-family: "Roboto";
+  font-weight: 100;
+  position: relative;
+  color: gray;
+  font-size: 32px;
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 0.2s;
+}
+.searchInput{
+    max-width: 300px;
+    margin-left: 5%;
+}

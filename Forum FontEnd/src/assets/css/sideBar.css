@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@media all{     
+*, :before, :after { 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+}     
+
+@media all{     
+*, :after, :before { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+}     
+
+@media all{     
+.panel-grid-cell .so-panel { 
+    zoom: 1;
+} 
+}     
+
+@media all{     
+.panel-grid-cell .panel-last-child { 
+    margin-bottom: 0;
+} 
+}     
+
+@media all{     
+#pg-304-0, #pg-304-1, #pg-304-2, #pg-304-3, #pg-304-4, #pg-304-5, #pl-304 .so-panel { 
+    margin-bottom: 40px;
+} 
+}     
+
+@media all{     
+.so-panel:last-child  { 
+    margin-bottom: 0px;
+} 
+}     
+
+@media all{     
+.disputo-home-popular { 
+    padding-left: 20px;
+} 
+}     
+
+@media all{     
+.panel-grid-cell .panel-cell-style { 
+    height: 100%;
+} 
+}     
+
+@media all{     
+.panel-grid-cell { 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box;
+} 
+}     
+
+@media all{     
+#pgc-304-0-1 { 
+    width: 34.9833%; 
+    width: calc(34.9833% - ( 0.65016707302738 * 40px ) );
+} 
+}     
+
+@media all{     
+#pgc-304-0-1 { 
+    align-self: auto;
+} 
+}     
+
+@media all{     
+.panel-grid.panel-has-style > .panel-row-style, .panel-grid.panel-no-style { 
+    display: flex; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: nowrap; 
+    -ms-justify-content: space-between; 
+    justify-content: space-between;
+} 
+}     
+
+@media all{     
+#pg-304-0 > .panel-row-style { 
+    padding: 0px 0px 20px 0px; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 20px; 
+    padding-left: 0px;
+} 
+}     
+
+@media all{     
+#pg-304-0.panel-no-style, #pg-304-0.panel-has-style > .panel-row-style, #pg-304-1.panel-no-style, #pg-304-1.panel-has-style > .panel-row-style, #pg-304-2.panel-no-style, #pg-304-2.panel-has-style > .panel-row-style, #pg-304-3.panel-no-style, #pg-304-3.panel-has-style > .panel-row-style, #pg-304-4.panel-no-style, #pg-304-4.panel-has-style > .panel-row-style, #pg-304-5.panel-no-style, #pg-304-5.panel-has-style > .panel-row-style, #pg-304-6.panel-no-style, #pg-304-6.panel-has-style > .panel-row-style { 
+    -webkit-align-items: flex-start; 
+    align-items: flex-start;
+} 
+}     
+
+@media all{     
+#disputo-main-inner { 
+    position: relative; 
+    margin: -60px 0 0; 
+    display: inline-block; 
+    width: 100%; 
+    padding: 60px; 
+    background: #fff; 
+    -webkit-box-shadow: 0 30px 50px 0 rgba(1,1,1,.15); 
+    box-shadow: 0 30px 50px 0 rgba(1,1,1,.15); 
+    z-index: 2; 
+    vertical-align: bottom; 
+    overflow-x: hidden; 
+    margin-top: -60px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    padding-top: 60px; 
+    padding-right: 60px; 
+    padding-bottom: 60px; 
+    padding-left: 60px; 
+    background-image: initial; 
+    background-position-x: initial; 
+    background-position-y: initial; 
+    background-size: initial; 
+    background-repeat-x: initial; 
+    background-repeat-y: initial; 
+    background-attachment: initial; 
+    background-origin: initial; 
+    background-clip: initial; 
+    background-color: rgb(255, 255, 255);
+} 
+}     
+
+@media all{     
+#disputo-main-inner.nomargin { 
+    margin: 60px 0 0; 
+    margin-top: 60px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px;
+} 
+}     
+
+@media all{     
+.container { 
+    width: 100%; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+    margin-right: auto; 
+    margin-left: auto;
+} 
+}     
+
+@media (min-width: 576px){     
+.container { 
+    max-width: 570px;
+} 
+}     
+
+@media (min-width: 768px){     
+.container { 
+    max-width: 760px;
+} 
+}     
+
+@media (min-width: 992px){     
+.container { 
+    max-width: 990px;
+} 
+}     
+
+@media (min-width: 1200px){     
+.container { 
+    max-width: 1180px;
+} 
+}     
+
+@media (min-width: 1440px){     
+.container { 
+    max-width: 1400px;
+} 
+}     
+
+
+
+@media all{     
+:root { 
+    --wp-admin-theme-color: #007cba; 
+    --wp-admin-theme-color-darker-10: #006ba1; 
+    --wp-admin-theme-color-darker-20: #005a87;
+} 
+}     
+
+@media all{     
+.disputo-add-border { 
+    padding: 30px; 
+    border: 1px solid #ddd; 
+    background: #fff; 
+    padding-top: 30px; 
+    padding-right: 30px; 
+    padding-bottom: 30px; 
+    padding-left: 30px; 
+    border-top-width: 1px; 
+    border-right-width: 1px; 
+    border-bottom-width: 1px; 
+    border-left-width: 1px; 
+    border-top-style: solid; 
+    border-right-style: solid; 
+    border-bottom-style: solid; 
+    border-left-style: solid; 
+    border-top-color: rgb(221, 221, 221); 
+    border-right-color: rgb(221, 221, 221); 
+    border-bottom-color: rgb(221, 221, 221); 
+    border-left-color: rgb(221, 221, 221); 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial; 
+    background-image: initial; 
+    background-position-x: initial; 
+    background-position-y: initial; 
+    background-size: initial; 
+    background-repeat-x: initial; 
+    background-repeat-y: initial; 
+    background-attachment: initial; 
+    background-origin: initial; 
+    background-clip: initial; 
+    background-color: rgb(255, 255, 255);
+} 
+}     
+
+@media all{     
+:selection { 
+    background-color: #ffa; 
+    color: #000;
+} 
+}     
+
+@media all{     
+.disputo-post-list-wrapper { 
+    padding-top: 5px;
+} 
+}     
+
+@media all{     
+h1, h2, h3, h4, h5, h6 { 
+    margin-top: 0; 
+    margin-bottom: 1.5rem;
+} 
+}     
+
+@media all{     
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { 
+    margin-bottom: 1.5rem; 
+    font-family: inherit; 
+    font-weight: 700; 
+    line-height: 1.4; 
+    color: #364253;
+} 
+}     
+
+@media all{     
+h4, .h4 { 
+    font-size: 1.5rem;
+} 
+}     
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, .forum-titles, .topic-titles, .popover-header { 
+    font-family: Lato; 
+    font-weight: 700; 
+    line-height: 1.4; 
+    text-transform: none; 
+    color: #364253;
+} 
+
+@media all{     
+.disputo-post-list { 
+    position: relative; 
+    display: table; 
+    table-layout: fixed; 
+    width: 100%; 
+    margin-bottom: 20px; 
+    padding-bottom: 20px;
+} 
+}     
+
+@media all{     
+.recentcomments:after, .disputo-post-list:after { 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    display: block; 
+    border: none; 
+    color: #fff; 
+    height: 1px; 
+    width: 100%; 
+    background: #ddd; 
+    content: ""; 
+    background: linear-gradient(to right,#fff,#ddd,#ddd,#fff); 
+    overflow: hidden; 
+    border-top-width: initial; 
+    border-right-width: initial; 
+    border-bottom-width: initial; 
+    border-left-width: initial; 
+    border-top-style: none; 
+    border-right-style: none; 
+    border-bottom-style: none; 
+    border-left-style: none; 
+    border-top-color: initial; 
+    border-right-color: initial; 
+    border-bottom-color: initial; 
+    border-left-color: initial; 
+    border-image-source: initial; 
+    border-image-slice: initial; 
+    border-image-width: initial; 
+    border-image-outset: initial; 
+    border-image-repeat: initial; 
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(221, 221, 221), rgb(221, 221, 221), rgb(255, 255, 255)); 
+    background-position-x: initial; 
+    background-position-y: initial; 
+    background-size: initial; 
+    background-repeat-x: initial; 
+    background-repeat-y: initial; 
+    background-attachment: initial; 
+    background-origin: initial; 
+    background-clip: initial; 
+    background-color: initial; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+} 
+}     
+
+@media all{     
+li:last-child , li:last-child , li:last-child , li:last-child , li:last-child , li:last-child , li:last-child , li:last-child , li:last-child , li:last-child , .recentcomments:last-child { 
+    padding: 0; 
+    margin: 0; 
+    padding-top: 0px; 
+    padding-right: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px;
+} 
+}     
+
+@media all{     
+li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , li:last-child:after , .recentcomments:last-child:after, .disputo-post-list:last-child:after { 
+    display: none;
+} 
+}     
+
+@media all{     
+.disputo-post-list-left, .disputo-post-list-right { 
+    display: table-cell; 
+    vertical-align: middle;
+} 
+}     
+
+@media all{     
+.disputo-post-list-left { 
+    width: 70px; 
+    padding-right: 15px;
+} 
+}     
+
+@media all{     
+.disputo-post-list-right { 
+    width: 100%;
+} 
+}     
+
+@media all{     
+a { 
+    color: #364253; 
+    text-decoration: none; 
+    background-color: transparent; 
+    -webkit-text-decoration-skip: objects; 
+    text-decoration-line: none; 
+    text-decoration-style: initial; 
+    text-decoration-color: initial;
+} 
+}     
+
+@media all{     
+a { 
+    -webkit-transition: color .2s linear; 
+    -moz-transition: color .2s linear; 
+    transition: color .2s linear; 
+    transition-duration: 0.2s; 
+    transition-timing-function: linear; 
+    transition-delay: 0s; 
+    transition-property: color;
+} 
+}     
+
+@media all{     
+.disputo-post-list-left a  { 
+    display: block;
+} 
+}     
+
+@media all{     
+.disputo-post-list a  { 
+    color: inherit;
+} 
+}     
+
+@media all{     
+p { 
+    margin-top: 0; 
+    margin-bottom: 1.5rem; 
+    line-height: 1.8;
+} 
+}     
+
+@media all{     
+.disputo-post-list-right p  { 
+    margin: 0 0 10px; 
+    line-height: 1.2; 
+    max-width: 100%; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    margin-top: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 10px; 
+    margin-left: 0px; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+} 
+}     
+
+@media all{     
+.disputo-post-list-info { 
+    font-size: 80%; 
+    line-height: 1;
+} 
+}     
+
+@media all{     
+img { 
+    vertical-align: middle; 
+    border-style: none; 
+    border-top-style: none; 
+    border-right-style: none; 
+    border-bottom-style: none; 
+    border-left-style: none;
+} 
+}     
+
+@media all{     
+img { 
+    max-width: 100%; 
+    height: auto; 
+    color: transparent;
+} 
+}     
+
+@media all{     
+.disputo-post-list-left img  { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 100%; 
+    border-top-left-radius: 100%; 
+    border-top-right-radius: 100%; 
+    border-bottom-right-radius: 100%; 
+    border-bottom-left-radius: 100%;
+} 
+}     
+
+@media all{     
+.fa { 
+    display: inline-block; 
+    font: normal normal normal 14px/1 FontAwesome; 
+    font-size: inherit; 
+    text-rendering: auto; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    font-style: normal; 
+    font-variant-caps: normal; 
+    font-variant-ligatures: normal; 
+    font-variant-numeric: normal; 
+    font-variant-east-asian: normal; 
+    font-weight: normal; 
+    font-stretch: normal; 
+    line-height: 1; 
+    font-family: FontAwesome;
+} 
+}     
+
+@media all{     
+.fa { 
+    font-weight: 400 !important;
+} 
+}     
+
+@media all{     
+.disputo-post-list-info .fa , .fa  { 
+    margin-right: 4px;
+} 
+}     
+
+@media all{     
+.fa-clock-o:before { 
+    content: "\f017";
+} 
+}     
+
+@media all{     
+a:hover { 
+    color: #1d84b5; 
+    text-decoration: underline; 
+    text-decoration-line: underline; 
+    text-decoration-style: initial; 
+    text-decoration-color: initial;
+} 
+}     
+
+@media all{     
+a:hover { 
+    text-decoration: none; 
+    text-decoration-line: none; 
+    text-decoration-style: initial; 
+    text-decoration-color: initial;
+} 
+}     
+
+@media all{     
+.disputo-post-list a:hover  { 
+    color: #1d84b5;
+} 
+}     
+

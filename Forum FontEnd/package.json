@@ -1,0 +1,31 @@
+{
+  "name": "forums",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Boulbeba bouaziz",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "vue": "^2.6.11",
+    "vue-moment": "^4.1.0",
+    "vue-router": "^3.2.0",
+    "vue-sidebar-menu": "^4.7.3",
+    "vue2-editor": "^2.10.2",
+    "vux-uploader-component": "^1.0.23"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

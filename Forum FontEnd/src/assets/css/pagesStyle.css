@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+.view-card {
+    background: white;
+    border-radius: 10px;
+    margin: 1% 0;
+    box-shadow: 0 6px 21px rgba(0, 0, 0, 0.22);
+}
+
+.view-header {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #7f8c8d;
+
+}
+
+.view-title {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.view-body {
+    min-height: 100px;
+    margin: 2% 0;
+}
+
+.search {
+    margin: 10px;
+}
+
+.el-select {
+    width: 100%;
+}
+
+.el-date-editor .el-range-separator {
+    padding: 0 !important;
+    color: gray !important;
+}
+
+.el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange.is-active {
+    max-width: 100%;
+}
+
+.row {
+    max-width: 100% !important;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    color: gray;
+    background-color: none;
+    border: none;
+}
+
+.page-item.active .page-link {
+    color: #2980b9 !important;
+    background-color: transparent !important;
+    border-color: none !important;
+    font-weight: 800;
+}
+
+.el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange {
+    width: 100% !important;
+}
+
+.btn-zone {
+    text-align: right;
+    padding-right: 3%;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.upload-ico {
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 5px;
+    margin-bottom: 11px;
+}
+.el-table__empty-block {
+    display: none!important;
+}
+.no-data-found{
+    color: gray;
+    font-weight: 800;
+    text-align: center;
+    margin: 34px 0;
+}
