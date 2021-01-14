@@ -5,7 +5,7 @@ this project is composed by 2 main part
  open the front end folder named forums in cmd then type this command:
 -> npm run serve 
 the front end server will open on localhost with a default port (8080 by default it will increment if the port is taking by other software)
-* Parte 2 "Back End" Made with spring boot you will need this software as shown below to run it:
+* Part 2 "Back End" Made with spring boot you will need this software as shown below to run it:
 - jdk 1.8 
 - spring suite tool or jetbrain intellij (you can run it with cmd too)
 steps :
